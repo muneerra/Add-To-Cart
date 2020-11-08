@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
+    <title>Let's Shop</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="enterMoney">
+            <label for="budget">Your budget:</label>
+            <input type="number" name="money" id="budget" value="0" />
+            <button onclick="addBalance()" class="add">Add</button>
+        </div>
+        <div class="products">
+            <div class="items">
+                <img src="product1.jpg" alt="" />
+                <span class="pricingContainer">Rs.1250<span class="quantity">
+                  <button id="addProductOne">+</button>
+                  <span id="productOneQty">0</span>
+                <button id="minusProductOne">-</button>
+                </span>
+                </span>
+            </div>
+            <div class="items">
+                <img src="product2.jpg" alt="" />
+                <span class="pricingContainer">Rs.2280<span class="quantity">
+              <button id="addProductTwo">+</button>
+              <span id="productTwoQty">0</span>
+                <button id="minusProductTwo">-</button></span>
+                </span>
+            </div>
+            <div class="items">
+                <img src="product3.jpg" alt="" />
+                <span class="pricingContainer">Rs.2500<span class="quantity">
+              <button id="addProductThree">+</button>
+              <span id="productThreeQty">0</span>
+                <button id="minusProductThree">-</button></span>
+                </span>
+            </div>
+        </div>
+        <div class="totalValue">
+            <span>Total </span>
+            <span id="totalValue">0</span>
+            <span>Rs</span>
+            <span>Blalance </span>
+            <span id="balanceValue">0</span>
+            <span>Rs</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
